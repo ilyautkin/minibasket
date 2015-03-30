@@ -1,7 +1,6 @@
 // minibasket.basket_html - Html-код корзинки
 // minibasket.basket - Объект корзинки
 // minibasket.css - Стили корзинки
-// minibasket.init() - Инициация корзинки
 $(function(){
 	var minibasket = {
 		selector: {

@@ -1,0 +1,280 @@
+#minibasket{
+	position: fixed;
+	bottom: 0;
+	right: 10px;
+	background: #fff;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;	
+	z-index: 100;
+	border: 1px solid #9c9c9c;
+	opacity: 0.7;
+	border-radius: 5px 5px 0 0;
+	width: 350px;
+}
+#minibasket .mb-but{
+	padding: 10px 15px;
+	text-align: center;
+	cursor: pointer;
+	border-bottom: 1px dotted #9c9c9c;
+	background: url(basket.svg) no-repeat 225px 2px;
+	background-size: 25px;
+	-webkit-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;		
+	text-transform: uppercase;
+	position: relative;
+	font-weight: bold;
+}
+#minibasket:hover{
+	opacity: 1;
+}
+#minibasket input[type=submit]{
+	background: #dadada;
+	border: 1px solid #9c9c9c;
+	margin: 0 10px 5px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+#minibasket .inner{
+	text-align: center;
+}
+#minibasket .tel{
+	padding: 10px 15px;
+	text-align: center;
+	cursor: pointer;
+	border-bottom: 1px dotted #9c9c9c;
+}
+#minibasket .tel input[type=text]{
+	width: 190px;
+	padding-left: 10px;
+	border: 1px solid #9c9c9c;
+}
+#minibasket .items .item .price{
+	font-size: 16px;
+	color: #000;
+	position: absolute;
+	right: 20px;
+	background: #dadada;
+	padding-left: 10px;
+}
+#minibasket .items .item{
+	position: relative;
+	text-align: left;
+	padding-left: 20px;
+	height: 30px;
+	line-height: 30px;
+	background: #dadada;
+	margin: 2px 0;
+}
+#minibasket .items .item .remove{
+	position: absolute;
+	left: 0;
+	cursor: pointer;
+	font-size: 11px;
+	border-right: 1px dotted;
+	padding: 0 3px;
+	display: block;
+	font-weight: 900;
+	text-transform: lowercase;
+}
+#minibasket .items .item .articul{
+	display: none;
+}
+#minibasket .items .item .overname{
+	width: 200px;
+	overflow: hidden;
+	display: inline-block;
+	height: inherit;
+	position: absolute;
+}
+#minibasket .itog{
+	display: inline-block;
+	background: #dadada;
+	padding: 0 5px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #000;
+	margin: 0;
+	border: 1px solid #9c9c9c;
+}
+#minibasket .itog .rub{
+	font-size: 10px;
+	margin-left: 2px;
+}
+#minibasket .items{
+	line-height: 40px;
+	overflow-y:scroll; 
+}
+#minibasket .tel input[type=text].err{
+	border: 1px solid rgb(255, 113, 113);
+}
+#mb-msgbox{
+	position: fixed;
+	bottom: 10px;
+	right: 368px;
+	background: #f90;
+	z-index: 99999;
+	border: 1px solid #9c9c9c;
+	padding: 10px 15px;
+	width: 204px;
+	display: none;
+	border-radius: 40px;
+	text-align: center;
+	opacity: 0.8;
+	color: #fff;
+}
+#mb-msgbox .imp{
+	color: #4A4A4A;
+	font-size: 16px;
+	display: block;
+}
+#minibasket .mb-but.signal{
+	background: url(basket.svg) no-repeat 170px 2px #f90;
+	color: #fff;
+	background-size: 25px;
+	-webkit-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	-ms-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;		
+}
+.recycle{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(recycle.svg);
+	background-size: 25px;
+	position: absolute;
+	top: 3px;
+	right: 5px;
+	z-index: 5;
+}
+#minibasket .num{
+	position: absolute;
+	left: 216px;
+	border-left: 1px dotted;
+	padding: 0 5px;
+	border-right: 1px dotted;
+	height: 25px;
+	top: 3px;
+	line-height: 25px;
+	background: #BDBDBD;
+}
+#minibasket .sliding{
+	height: 0;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;	
+}
+#minibasket .sliding.visible{
+	height: auto;
+}
+
+
+/* Дополнение */
+table.price tr, table.price{
+	position: relative;
+}
+table.price tr .after{
+	position: absolute;
+	right: 85px;
+	background: #f90;
+	color: #fff;
+	padding: 5px 10px;
+	vertical-align: top;
+	cursor: pointer;
+	width: 70px;
+	text-align: center;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	opacity: 0;
+	margin-top: 10px;
+	border-radius: 5px;
+	display: none;
+}
+table.price tr:hover .after{
+	opacity: 1;
+}
+table.price tr:first-child .after{
+	display: none;
+}
+#mb-msgbox .close{
+	font-family: Arial;
+	text-transform: uppercase;
+	position: absolute;
+	left: 5px;
+	top: 0;
+	background: #f90;
+	border: 1px solid #fff;
+	border-radius: 30px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+}
+input.num{
+	width: 50px;
+	text-align: center;
+	border: 0;
+	border-radius: 2px;
+	height: 16px;
+	vertical-align: top;
+	line-height: 16px;
+	margin-top: 2px;
+}
+#mb-msgbox .accept,
+#mb-msgbox .cancel{
+	line-height: 20px;
+	border: 1px solid #fff;
+	margin: 2px;
+	border-radius: 20px;
+	width: 100px;
+	display: inline-block;
+	cursor: pointer;
+}
+#mb-msgbox.accept-box{
+	width: 236px;
+	bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
